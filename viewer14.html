@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <script src="//openseadragon.github.io/openseadragon/openseadragon.min.js"></script>
+</head>
+
+<body>
+    <h1>PalazzoDucale_exterior_FacadeCourEst_5mm</h1>
+    <a href="./index.html" style="background-color:white; color:blue">Back</a>
+    <div id="seadragon-viewer" style="width:100%; height:100%;"></div>
+    <script>
+        window.onload = function () {
+            var tileSources_dzi = 'https://alouis-jpg.github.io/VeneziaOrthos/DZI/PalazzoDucale_exterior_FacadeCourEst_5mm.dzi';
+
+            var viewer = OpenSeadragon({
+                id: "seadragon-viewer",
+                prefixUrl: "//openseadragon.github.io/openseadragon/images/",
+                tileSources: tileSources_dzi,
+            });
+        }
+    </script>
+</body>
+
+
+
+</html>
