@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <script src="openseadragon/openseadragon.min.js"></script>
+    <script src="//openseadragon.github.io/openseadragon/openseadragon.min.js"></script>
 </head>
 
 <body>
@@ -10,22 +10,13 @@
     <div id="seadragon-viewer" style="width:100%; height:100%;"></div>
     <script>
         window.onload = function () {
-            var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_S_05mm.dzi';
-            // var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_Plafond_05mm.dzi';
-            // var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_Paradis_05mm_corrected.dzi';
-            // var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_Paradis_05mm_corrected_files.dzi';
-            // var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_O_05mm.dzi';
-            // var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_N_05mm.dzi';
-            // var tileSources_dzi = 'http://localhost:8080/DZI/PalazzoDucale_salle_1_Senato_Top_05mm_dz.dzi';
-            // var tileSources_dzi = 'http://localhost:8080/DZI/PalazzoDucale_salle_2_ConsiglioDeiX_Top_05mm_dz.dzi';
-            // var tileSources_dzi = 'http://localhost:8080/DZI/PalazzoDucale_salle_4_Bussola_Top_05mm_dz.dzi';
-            // var tileSources_dzi = 'http://localhost:8080/DZI/Scrutinio_E_05mm.dzi';
-            // var tileSources_dzi = 'http://localhost:8080/DZI/Scrutinio_S_05mm.dzi';
-            // var tileSources_dzi = 'http://localhost:8080/DZI/Scrutinio_O_05mm.dzi';
+            // var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_S_05mm.dzi';
+            var tileSources_dzi = 'https://alouis-jpg.github.io/VeneziaOrthos/DZI/Consiglio_S_05mm.dzi';
+           
 
             var viewer = OpenSeadragon({
                 id: "seadragon-viewer",
-                prefixUrl: "openseadragon/images/",
+                prefixUrl: "//openseadragon.github.io/openseadragon/images/",
                 tileSources: tileSources_dzi,
             });
         }
