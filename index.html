@@ -13,18 +13,22 @@
       title="A tool to handle the administration of MySQL over the Web">PhpMyAdmin</a>
     <a href="http://192.168.99.125:3000" target="_blank" title="The open observability platform">Grafana</a>
     <a href="#" target="_blank">InfluxDB</a> -->
+    <!-- <li><a href="./42green_website_en_v2.0.html">English </a></li>
+    <li><a href="./42green_website_fr_v2.0.html">Accueil </a></li> -->
+
     <button id="Consiglio_S" style="background-color:white; color:red">Consiglio_S</button>
     <button id="Consiglio_N" style="background-color:white; color:red">Consiglio_N</button>
   </div>
 
-  <div id="seadragon-viewer" style="width:100%; height:100%;"></div>
+  <div id="seadragon-viewer1" style="border:1px"></div>
+  <div id="seadragon-viewer2" style="width:100%; height:100%;"></div>
 
   <script>
 
     let viewer1, viewer2;
 
     function init() {
-      var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_S_05mm.dzi';
+      // var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_S_05mm.dzi';
       // var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_Plafond_05mm.dzi';
       // var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_Paradis_05mm_corrected.dzi';
       // var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_Paradis_05mm_corrected_files.dzi';
@@ -38,25 +42,25 @@
       // var tileSources_dzi = 'http://localhost:8080/DZI/Scrutinio_O_05mm.dzi';
 
       viewer1 = OpenSeadragon({
-        id: "seadragon-viewer",
+        id: "seadragon-viewer1",
         prefixUrl: "openseadragon/images/",
         tileSources: 'http://localhost:8080/DZI/Consiglio_S_05mm.dzi',
       });
-      viewer1.setVisible(false);
+      // viewer1.setVisible(false);
 
       viewer2 = OpenSeadragon({
-        id: "seadragon-viewer",
+        id: "seadragon-viewer2",
         prefixUrl: "openseadragon/images/",
         tileSources: 'http://localhost:8080/DZI/Consiglio_N_05mm.dzi',
       });
-      viewer2.setVisible(true);
+      // viewer2.setVisible(false);
 
       document.querySelector('#Consiglio_S').addEventListener('click', () => showViewer(viewer1));
       document.querySelector('#Consiglio_N').addEventListener('click', () => showViewer(viewer2));
     }
 
     function showViewer(viewer) {
-      viewer.setVisible(false);
+      viewer.setVisible(true);
     }
 
     init();
