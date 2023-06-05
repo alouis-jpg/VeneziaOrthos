@@ -6,66 +6,20 @@
 
 <body>
   <h1>Venezia ortho photos</h1>
-  <div>
-    <!-- <a href="http://localhost:8080/thumbnails/Consiglio_S_05mm." target="_blank">Nginx</a>
-    <a href="http://192.168.99.125:5050" target="_blank" title="The world’s most popular website builder">Wordpress</a>
-    <a href="http://192.168.99.125:5000" target="_blank"
-      title="A tool to handle the administration of MySQL over the Web">PhpMyAdmin</a>
-    <a href="http://192.168.99.125:3000" target="_blank" title="The open observability platform">Grafana</a>
-    <a href="#" target="_blank">InfluxDB</a> -->
-    <!-- <li><a href="./42green_website_en_v2.0.html">English </a></li>
-    <li><a href="./42green_website_fr_v2.0.html">Accueil </a></li> -->
+  <li><a href="./viewer1.html">Consiglio_S_05mm </a></li>
+  <li><a href="./viewer2.html">Consiglio_Plafond_05mm </a></li>
+  <li><a href="./viewer3.html">Consiglio_Paradis_05mm_ </a></li>
+  <li><a href="./viewer4.html">Consiglio_O_05mm </a></li>
+  <li><a href="./viewer5.html">Consiglio_N_05mm </a></li>
+  <li><a href="./viewer6.html">Scrutinio_E_05mm </a></li>
+  <li><a href="./viewer7.html">Scrutinio_O_05mm </a></li>
+  <li><a href="./viewer9.html">Scrutinio_N_05mm </a></li>
+  <li><a href="./viewer8.html">Scrutinio_Jugement_05mm </a></li>
+  <li><a href="./viewer10.html">PalazzoDucale_salle_1_Senato_Top_05mm </a></li>
+  <li><a href="./viewer11.html">PalazzoDucale_salle_2_ConsiglioDeiX_Top_05mm </a></li>
+  <li><a href="./viewer12.html">PalazzoDucale_salle_4_Bussola_Top_05mm </a></li>
 
-    <button id="Consiglio_S" style="background-color:white; color:red">Consiglio_S</button>
-    <button id="Consiglio_N" style="background-color:white; color:red">Consiglio_N</button>
-  </div>
 
-  <div id="seadragon-viewer1" style="border:1px"></div>
-  <div id="seadragon-viewer2" style="width:100%; height:100%;"></div>
-
-  <script>
-
-    let viewer1, viewer2;
-
-    function init() {
-      // var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_S_05mm.dzi';
-      // var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_Plafond_05mm.dzi';
-      // var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_Paradis_05mm_corrected.dzi';
-      // var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_Paradis_05mm_corrected_files.dzi';
-      // var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_O_05mm.dzi';
-      // var tileSources_dzi = 'http://localhost:8080/DZI/Consiglio_N_05mm.dzi';
-      // var tileSources_dzi = 'http://localhost:8080/DZI/PalazzoDucale_salle_1_Senato_Top_05mm_dz.dzi';
-      // var tileSources_dzi = 'http://localhost:8080/DZI/PalazzoDucale_salle_2_ConsiglioDeiX_Top_05mm_dz.dzi';
-      // var tileSources_dzi = 'http://localhost:8080/DZI/PalazzoDucale_salle_4_Bussola_Top_05mm_dz.dzi';
-      // var tileSources_dzi = 'http://localhost:8080/DZI/Scrutinio_E_05mm.dzi';
-      // var tileSources_dzi = 'http://localhost:8080/DZI/Scrutinio_S_05mm.dzi';
-      // var tileSources_dzi = 'http://localhost:8080/DZI/Scrutinio_O_05mm.dzi';
-
-      viewer1 = OpenSeadragon({
-        id: "seadragon-viewer1",
-        prefixUrl: "openseadragon/images/",
-        tileSources: 'http://localhost:8080/DZI/Consiglio_S_05mm.dzi',
-      });
-      // viewer1.setVisible(false);
-
-      viewer2 = OpenSeadragon({
-        id: "seadragon-viewer2",
-        prefixUrl: "openseadragon/images/",
-        tileSources: 'http://localhost:8080/DZI/Consiglio_N_05mm.dzi',
-      });
-      // viewer2.setVisible(false);
-
-      document.querySelector('#Consiglio_S').addEventListener('click', () => showViewer(viewer1));
-      document.querySelector('#Consiglio_N').addEventListener('click', () => showViewer(viewer2));
-    }
-
-    function showViewer(viewer) {
-      viewer.setVisible(true);
-    }
-
-    init();
-
-  </script>
 </body>
 
 
